@@ -1,0 +1,7 @@
+title: kirche-mv.de
+description: Beratung und Realisierung einer Middleware zur Optimierung der ICS/iCal-Feeds des Veranstaltungs­kalenders von "kirche-mv.de", zur besseren Erreichbarkeit und Verarbeitung.
+link: https://github.com/schafevormfenster/kirche-mv-kalender
+category: Development
+tags:
+  - API
+  - ICS

@@ -1,0 +1,141 @@
+---
+layout: default
+title: "Projektbüro Schafe vorm Fenter UG"
+---
+<header class="relative bg-[url('/assets/img/projects-wireframe.png')] bg-cover bg-fixed">
+    <div class="absolute z-0 w-full h-full bg-white bg-opacity-80"></div>
+    <div class="container relative z-10 w-2/3 bg-opacity-0 ">
+        <div id="logo" class="w-full pt-8 pb-32">
+            <img class="inline h-20 mb-2" src="/assets/img/Schafe-vorm-Fenster_Logo.png"
+                alt="Schafe vorm Fenster Logo" />
+            <p class="font-mono text-2xl font-light">Schafe vorm Fenster UG</p>
+        </div>
+        <div id="claim" class="pb-32">
+            <h1 class="pb-8 text-6xl font-extrabold leading-tight text-primary">Für eine digitale Zukunft,<br />die alle
+                erreicht.</h1>
+            <p class="text-3xl leading-tight">Revolutioniere das ländliche Leben durch den Einsatz von Open
+                Data-basierten Web- und
+                Softwarelösungen.</p>
+        </div>
+    </div>
+</header>
+
+<main class="px-8 py-16 text-2xl text-white bg-black">
+
+    <div class="container w-full lg:w-2/3">
+        <h2 class="pb-8 text-4xl">Entfalten Sie das Potenzial offener Daten <br /> für das ländliche Leben.</h2>
+        <p class="pb-8">Werden Sie zum Akteur Ihrer Region und profitieren Sie von unserem Expertenwissen. Lassen
+            Sie uns gemeinsam
+            die
+            digitale Zukunft gestalten.</p>
+    </div>
+    <div class="container w-full md:columns-2">
+        <div id="offer-worshops" class="">
+            <img class="inline-block h-20 mb-4" src="/assets/img/presentation-chart-bar.svg" />
+            <h3 class="pb-4 text-3xl">Vorträge & Workshops</h3>
+            <ul class="hashtags">
+                <li>
+                    Marketing
+                </li>
+                <li>
+                    Events
+                </li>
+                <li>
+                    Locations
+                </li>
+                <li>
+                    News
+                </li>
+                <li>
+                    Social
+                </li>
+            </ul>
+            <p class="pt-4">Unsere Workshops und Vorträge zeigen Ihnen, wie Sie Daten effektiv nutzen und verwalten.
+                Lernen Sie von
+                Experten und profitieren Sie von unseren umfangreichen Erfahrungen. Gestalten Sie die Zukunft Ihrer
+                Region
+                aktiv mit.</p>
+
+            <button class="mt-4 text-xl"><a href="mailto:jan@schafe-vorm-fenster.de?subject:Workshop-Anfrage">Workshop
+                    anfragen</a></button>
+        </div>
+
+        <div id="offer-development">
+            <img class="inline-block h-20 mb-4" src="/assets/img/chip.svg">
+            <h3 class="pb-4 text-3xl">Beratung & Software</h3>
+            <ul class="hashtags">
+                <li>REST</li>
+                <li>ICS/ICAL</li>
+                <li>LD+JSON</li>
+                <li>RSS/ATOM</li>
+                <li>AI/KI</li>
+            </ul>
+            <p class="pt-4">Open Data macht Ihre Daten für alle zugänglich. Offene Schnittstellen und Formate stellen
+                die
+                Weiterverarbeitung und Verbreitung sicher. Wir unterstützen Sie bei der Analyse und Implementierung
+                Ihrer
+                Open Data Schnittstellen.</p>
+
+            <button class="mt-4 text-xl"><a
+                    href="mailto:jan@schafe-vorm-fenster.de?subject:Entwicklungs-Anfrage">Angebot
+                    anfragen</a></button>
+        </div>
+
+    </div>
+</main>
+
+
+<article class="px-8 py-16 text-2xl text-white bg-gray-800">
+    <div class="container w-full lg:w-2/3">
+        <h2 class="pb-8 text-4xl">Praktische Beispiele</h2>
+        <p class="pb-8">Unsere Beispiele zeigen die Umsetzung von Projekten im Bereich Open Data, technischer Beratung
+            zu
+            Schnittstellen
+            sowie Implementierung von ICS/iCal-Feeds. In zahlreichen Workshops und Schulungen haben wir unser Wissen
+            bereits
+            weitergegeben und die Digitalisierung auf Dörfern vorangetrieben.</p>
+    </div>
+    <div class="container grid w-full gap-8 lg:grid-cols-2 xl:grid-cols-3">
+        {% for reference in site.references %}
+        <div class="text-left">
+            <h3 class="pb-4">{{ reference.title }}</h3>
+            <p class="pb-2 text-xl">{{ reference.description }}</p>
+            {% if reference.tags %}
+            <p class="mb-2">
+                {% for tag in reference.tags %}
+                <span class="hashtag">{{tag}}</span>
+                {% endfor %}
+            </p>
+            {% endif %}
+            {% if reference.link %}
+            <a class="text-sm line-clamp-1" href="{{ reference.link | absolute_url }}" target="_blank"><img
+                    class="inline-block h-4 mr-2" src="/assets/img/github.svg" />{{
+                reference.link | replace: "https://github.com/", ""
+                }}</a>
+            {% endif %}
+        </div>
+
+        {% endfor %}
+    </div>
+</article>
+
+
+
+<article class="px-8 py-16 text-2xl text-black bg-brand">
+    <div class="container w-full lg:w-2/3">
+        <h2 class="pb-8 text-4xl">Hausgemachte Lösungen.</h2>
+        <p class="pb-8">Mit der digitalen Terminliste geben wir unseren Visionen eine Form. Digitalisierung auf
+            den Dörfern wird hier mit Open Data, dezentraler Datenverwaltung und smarter Technologie einfach für alle
+            nutzbar gemacht.</p>
+    </div>
+    <div class="container flex flex-col-reverse items-center w-full lg:flex-row ">
+        <div class="flex-1 pb-16 text-left">
+            <p class="pb-8">Mit der digitalen Terminliste unter geben wir unseren Visionen eine Form. Digitalisierung
+                auf den
+                Dörfern wird hier mit Open Data, dezentraler Datenverwaltung und smarter Technologie einfach für
+                alle nutzbar gemacht.</p>
+            <button class="text-lg"><a href="" />www.schafe-vorm-fenster.de</a></button>
+        </div>
+        <div class="flex-1 text-center"><img class="inline-block pb-8" src="/assets/img/dorfterminkalender.png" /></div>
+    </div>
+</article>

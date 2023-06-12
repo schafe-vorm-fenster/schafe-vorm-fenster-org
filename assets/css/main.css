@@ -1,0 +1,64 @@
+---
+---
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Exo2';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/assets/fonts/exo-2-v20-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* exo-2-800 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Exo2';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/assets/fonts/exo-2-v20-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/assets/fonts/inconsolata-v31-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+body {
+    @apply p-0 m-0 m-auto font-sans text-lg font-light leading-tight text-center;
+}
+
+h1, h2, h3, h4 {
+    @apply font-extrabold;
+}
+
+
+.hashtags  {
+    @apply inline;
+}
+
+.hashtags li, .hashtag {
+    @apply inline-block px-2 py-1 mb-2 mr-2 text-white rounded-md bg-primary;
+    @apply text-xs uppercase;
+}
+
+.hashtags li::before, .hashtag::before {
+    content: '#';
+}
+
+button {
+    @apply px-4 py-3 text-white rounded-md rounded-br-3xl bg-primary;
+}
+
+button:before {
+    content: '➜ ';
+}
+

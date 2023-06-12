@@ -1,0 +1,15 @@
+url: "https://www.schafe-vorm-fenster.org/"
+baseurl: ""
+title: "Projektbüro Schafe vorm Fenter UG"
+collections:
+  references:
+    output: true
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+plugins:
+  - jekyll-postcss
+postcss:
+  cache: false

@@ -13,10 +13,6 @@ defaults:
       image: true
 plugins:
   - jekyll-postcss
-sass:
-  load_paths:
-    - _sass
-    - node_modules
 postcss:
   cache: false
 include: ["node_modules/tailwindcss"]

@@ -13,7 +13,6 @@ defaults:
       image: true
 plugins:
   - jekyll-postcss
-  - jekyll-purgecss
 postcss:
   cache: false
 exclude:
@@ -21,5 +20,4 @@ exclude:
   - yarn.lock
   - tailwind.config.js
   - postcss.config.js
-  - purgecss.config.js
 

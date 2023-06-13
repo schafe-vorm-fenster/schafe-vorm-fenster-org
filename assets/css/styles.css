@@ -639,6 +639,10 @@ video {
   width: 100%;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -657,6 +661,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded-md {
@@ -700,8 +708,8 @@ video {
   --tw-bg-opacity: 0.8;
 }
 
-.bg-\[url\(\'\/assets\/img\/projects-wireframe\.png\'\)\] {
-  background-image: url('/assets/img/projects-wireframe.png');
+.bg-\[url\(\'\/assets\/img\/projects-wireframe\.jpg\'\)\] {
+  background-image: url('/assets/img/projects-wireframe.jpg');
 }
 
 .bg-cover {
@@ -958,11 +966,6 @@ footer a {
 }
 
 @media (min-width: 768px) {
-  .md\:columns-2 {
-    -moz-columns: 2;
-         columns: 2;
-  }
-
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -970,6 +973,10 @@ footer a {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .lg\:col-span-3 {
     grid-column: span 3 / span 3;
   }
@@ -982,12 +989,20 @@ footer a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 }
 

@@ -1,3 +1,7 @@
+## Development
+
+`jekyll serve --livereload`
+
 ## Tailwind CSS
 
 ```

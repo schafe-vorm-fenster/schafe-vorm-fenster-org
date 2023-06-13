@@ -3,7 +3,9 @@ baseurl: ""
 title: "Projektbüro Schafe vorm Fenter UG"
 collections:
   references:
-    output: true
+    output: false
+  visions:
+    output: false
 defaults:
   - scope:
       path: "assets/img"
@@ -11,5 +13,13 @@ defaults:
       image: true
 plugins:
   - jekyll-postcss
+  - jekyll-purgecss
 postcss:
   cache: false
+exclude:
+  - package.json
+  - yarn.lock
+  - tailwind.config.js
+  - postcss.config.js
+  - purgecss.config.js
+

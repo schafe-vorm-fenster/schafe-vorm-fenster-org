@@ -2,20 +2,22 @@
 layout: default
 title: "Projektbüro Schafe vorm Fenter UG"
 ---
-<header class="relative bg-[url('/assets/img/projects-wireframe.png')] bg-cover bg-fixed">
+<header class="px-8 relative bg-[url('/assets/img/projects-wireframe.png')] bg-cover bg-fixed">
     <div class="absolute z-0 w-full h-full bg-white bg-opacity-80"></div>
-    <div class="container relative z-10 w-2/3 bg-opacity-0 ">
+    <div class="container relative z-10 w-full bg-opacity-0 lg:w-2/3 ">
         <div id="logo" class="w-full pt-8 pb-32">
             <img class="inline h-20 mb-2" src="/assets/img/Schafe-vorm-Fenster_Logo.png"
                 alt="Schafe vorm Fenster Logo" />
             <p class="font-mono text-2xl font-light">Schafe vorm Fenster UG</p>
         </div>
         <div id="claim" class="pb-32">
-            <h1 class="pb-8 text-6xl font-extrabold leading-tight text-primary">Für eine digitale Zukunft,<br />die alle
+            <h1 class="pb-8 text-5xl font-extrabold leading-tight md:text-6xl text-primary">Für eine digitale
+                Zukunft,<br />die
+                alle
                 erreicht.</h1>
-            <p class="text-3xl leading-tight">Revolutioniere das ländliche Leben durch den Einsatz von Open
-                Data-basierten Web- und
-                Softwarelösungen.</p>
+            <p class="text-3xl leading-tight">Revolutioniere das ländliche Leben durch den Einsatz von
+                <strong>Open-Data</strong>-basierten und <strong>KI</strong>-unterstützten Softwarelösungen.
+            </p>
         </div>
     </div>
 </header>
@@ -121,7 +123,7 @@ title: "Projektbüro Schafe vorm Fenter UG"
 
 
 
-<article class="px-8 py-16 text-2xl text-black bg-brand">
+<article class="px-8 py-16 text-2xl text-black bg-brand-light">
     <div class="container w-full lg:w-2/3">
         <h2 class="pb-8 text-4xl">Hausgemachte Lösungen.</h2>
         <p class="pb-8">Mit der digitalen Terminliste geben wir unseren Visionen eine Form. Digitalisierung auf
@@ -130,12 +132,106 @@ title: "Projektbüro Schafe vorm Fenter UG"
     </div>
     <div class="container flex flex-col-reverse items-center w-full lg:flex-row ">
         <div class="flex-1 pb-16 text-left">
+            <p class="pb-8 font-extrabold">Erfahre was wann wo in deinem Dorf los ist.
+                Einfach per Smartphone.</p>
             <p class="pb-8">Mit der digitalen Terminliste unter geben wir unseren Visionen eine Form. Digitalisierung
                 auf den
                 Dörfern wird hier mit Open Data, dezentraler Datenverwaltung und smarter Technologie einfach für
                 alle nutzbar gemacht.</p>
-            <button class="text-lg"><a href="" />www.schafe-vorm-fenster.de</a></button>
+            <button class="text-lg"><a href="https://schafe-vorm-fenster.de/"
+                    target="_blank">www.schafe-vorm-fenster.de</a></button>
         </div>
         <div class="flex-1 text-center"><img class="inline-block pb-8" src="/assets/img/dorfterminkalender.png" /></div>
     </div>
 </article>
+
+
+<article class="px-8 py-16 text-2xl text-white bg-gray-800">
+    <div class="container w-full lg:w-2/3">
+        <h2 class="pb-8 text-4xl">Projektvisionen<br />für ein lebendigeres Landleben.</h2>
+        <p class="pb-8">Während unserer Treffen, Beratungen und Workshops sammeln wir vielfältige Inspirationen. In der
+            Kombination mit offenen Daten, dezentralen Datenbanken und moderner Software lassen sich noch viele
+            wertvolle Projekte realisieren.</p>
+    </div>
+    <div class="container grid w-full gap-8 lg:grid-cols-2 xl:grid-cols-3">
+        {% for vision in site.visions %}
+        <div class="text-left">
+            <img class="inline-block h-20 mb-4" src="/assets/img/{{vision.icon}}" />
+            <h3 class="pb-4">{{ vision.title }}</h3>
+            <p class="pb-2 text-xl">{{ vision.description }}</p>
+            {% if vision.tags %}
+            <p class="mb-2">
+                {% for tag in vision.tags %}
+                <span class="hashtag">{{tag}}</span>
+                {% endfor %}
+            </p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</article>
+
+
+<aside class="px-8 py-16 text-2xl text-black bg-primary-light">
+    <div class="container w-full lg:w-2/3">
+        <h2 class="pb-8 text-4xl">Schafe vorm Fenster UG</h2>
+        <p class="pb-8">Schafe vorm Fenster steht für das sinnbildliche Dorfleben. Als Gründer ist Jan, ein
+            eingefleischter Dorfeinwohner und IT-Experte, überzeugt davon, dass auch ländliche Regionen von digitalen
+            Lösungen profitieren können. Zusammen mit Christian setzt er sich für die digitale Entwicklung im ländlichen
+            Raum ein.</p>
+    </div>
+    <div class="container grid w-full grid-cols-3 gap-8 lg:grid-cols-4 xl:w-2/3 ">
+        <div><img class="inline-block rounded-md rounded-br-3xl grayscale" src="/assets/img/jan.jpg"
+                alt="Jan-Henrik Hempel" /></div>
+        <div class="col-span-2 pb-16 text-left lg:col-span-3">
+            <p class="pb-4 font-extrabold">Jan-Henrik Hempel</p>
+            <p class="pb-8">Jan ist Architekt und Motivator für Visionen, Macher und Perfektionist - und im Kopf immer
+                einen Schritt weiter.</p>
+            <button class="mb-4 mr-4 text-base"><a href="tel:+4915678204630" target="_blank">+49 156
+                    78204630</a></button>
+            <button class="text-base"><a href="mailto:jan@schafe-vorm-fenster.de"
+                    target="_blank">jan@schafe-vorm-fenster.de</a></button>
+        </div>
+    </div>
+</aside>
+
+
+<footer class="px-8 py-16 text-base text-white bg-black">
+    <div class="container grid w-full grid-cols-3 gap-8 xl:w-2/3 ">
+        <div class="text-left">
+            <h4>Kontakt</h4>
+            <p>
+                Jan-Henrik Hempel<br />
+                E-Mail: jan@schafe-vorm-fenster.de<br />
+                Telefon: +49 156 78204630<br />
+                Signal und WhatsApp: +49 156 78204630<br />
+            </p>
+            <h4>Impressum</h4>
+            <p>
+                Schafe vorm Fenster UG<br />
+                Schlatkow 6, 17390 Schmatzin OT Schlatkow
+            </p>
+            <p>
+                Geschäftsführender Gesellschafter: Jan-Henrik Hempel<br />
+                Eingetragen im Handelsregister des Amtsgerichtes Stralsund, VR 22906.<br />
+                UsSt-IdNr.: DE323153438
+
+            </p>
+        </div>
+        <div class="col-span-2 text-left">
+            <h4 class="pb-4">Datenschutzhinweise</h4>
+            <p>Wir nutzen für diese Webseite (www.schafe-vorm-fenster.org) kein Webtracking und keine Cookies.</p>
+            <p>Die Übertragung schützen wir mit einer Verschlüsselung über SSL/HTTPS.</p>
+            <p>Beim Zugriff auf diese Webseite werden technisch notwendige Informationen automatisch ausgetauscht und
+                Logfiles erzeugt. Das Hosting wird von <a href="https://webflow.com/">Webflow</a> übernommen. Details
+                finden Sie <a href="https://webflow.com/legal/eu-privacy-policy" target="_blank">hier</a>.</p>
+            <p>Die Schafe vorm Fenster UG ist per Telefon, Messanger und E-Mail erreichbar. Die dabei bereitgestellten
+                persönlichen Daten sowie die Korrespondenz werden von uns im Rahmen der geschäftlichen Kommunikation
+                gespeichert und genutzt. Wir geben keine Daten an Dritte weiter.</p>
+            <p>Wir speichern personenbezogene Daten nur solange wie notwendig oder gesetzlich vorgesehen. Nach Erfüllung
+                des Zwecks oder Ablauf der Fristen werden sie gelöscht.</p>
+            <p>Um Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten zu erhalten, wenden Sie sich an <a
+                    href="mailto:datenschutz@schafe-vorm-fenster.de">datenschutz@schafe-vorm-fenster.de</a>.</p>
+        </div>
+    </div>
+</footer>

@@ -1,10 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './_drafts/**/*.html',
-    './_includes/**/*.html',
     './_layouts/**/*.html',
-    './_posts/*.md',
     './*.md',
     './*.html',
   ],
@@ -13,6 +10,8 @@ module.exports = {
       colors: {
         'primary': '#602bb6',
         'brand': '#b4cf39',
+        'brand-light': '#c9e44e ',
+        'primary-light': '#d6aff3',
         'black': '#111111',
       },
       fontFamily: {
@@ -29,10 +28,7 @@ module.exports = {
         'hero': "url('/assets/img/projects-wireframe.png')",
 
       },
-      plugins: [
-        require('@tailwindcss/typography'),
-      ],
+      plugins: [],
     }
-
   },
 };

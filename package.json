@@ -1,6 +1,10 @@
 {
+  "scripts": {
+    "build": "NODE_ENV=production bundle exec jekyll build",
+    "dev": "bundle exec jekyll serve --livereload",
+    "start": "npm run dev"
+  },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.1",
     "postcss": "^8.4.24",

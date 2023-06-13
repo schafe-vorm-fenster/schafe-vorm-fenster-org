@@ -62,3 +62,12 @@ button:before {
     content: '➜ ';
 }
 
+footer h4 {
+    @apply pt-4 pb-2;
+}
+footer p {
+    @apply pb-2;
+}
+footer a {
+    @apply text-primary-light;
+}

@@ -1,13 +1,15 @@
 ---
 layout: default
 title: "Projektbüro Schafe vorm Fenter UG"
+description: "Wir sind ein Projektbüro für Open Data und KI. Wir unterstützen Sie bei der Umsetzung von Open Data
+Projekten und der Entwicklung von Softwarelösungen."
+keywords: "Open Data, KI, Künstliche Intelligenz, Schafe vorm Fenster, API Development, ICS, ICAL, RSS, ATOM, JSON+LD,"
 ---
 <header class="px-8 relative bg-[url('/assets/img/projects-wireframe.png')] bg-cover bg-fixed">
     <div class="absolute z-0 w-full h-full bg-white bg-opacity-80"></div>
     <div class="container relative z-10 w-full bg-opacity-0 lg:w-2/3 ">
         <div id="logo" class="w-full pt-8 pb-32">
-            <img class="inline h-20 mb-2" src="/assets/img/Schafe-vorm-Fenster_Logo.png"
-                alt="Schafe vorm Fenster Logo" />
+            <img class="inline h-20 mb-2" src="/assets/img/Schafe-vorm-Fenster_Logo.png" alt="Schafe vorm Fenster UG" />
             <p class="font-mono text-2xl font-light">Schafe vorm Fenster UG</p>
         </div>
         <div id="claim" class="pb-32">
@@ -33,7 +35,8 @@ title: "Projektbüro Schafe vorm Fenter UG"
     </div>
     <div class="container w-full md:columns-2">
         <div id="offer-worshops" class="">
-            <img class="inline-block h-20 mb-4" src="/assets/img/presentation-chart-bar.svg" />
+            <img class="inline-block h-20 mb-4" src="/assets/img/presentation-chart-bar.svg"
+                alt="Icon: Vorträge & Workshops" />
             <h3 class="pb-4 text-3xl">Vorträge & Workshops</h3>
             <ul class="hashtags">
                 <li>
@@ -63,7 +66,7 @@ title: "Projektbüro Schafe vorm Fenter UG"
         </div>
 
         <div id="offer-development">
-            <img class="inline-block h-20 mb-4" src="/assets/img/chip.svg">
+            <img class="inline-block h-20 mb-4" src="/assets/img/chip.svg" alt="Icon: Beratung & Software">
             <h3 class="pb-4 text-3xl">Beratung & Software</h3>
             <ul class="hashtags">
                 <li>REST</li>
@@ -111,7 +114,7 @@ title: "Projektbüro Schafe vorm Fenter UG"
             {% endif %}
             {% if reference.link %}
             <a class="text-sm line-clamp-1" href="{{ reference.link | absolute_url }}" target="_blank"><img
-                    class="inline-block h-4 mr-2" src="/assets/img/github.svg" />{{
+                    class="inline-block h-4 mr-2" src="/assets/img/github.svg" alt="GitHub" />{{
                 reference.link | replace: "https://github.com/", ""
                 }}</a>
             {% endif %}
@@ -156,7 +159,7 @@ title: "Projektbüro Schafe vorm Fenter UG"
     <div class="container grid w-full gap-8 lg:grid-cols-2 xl:grid-cols-3">
         {% for vision in site.visions %}
         <div class="text-left">
-            <img class="inline-block h-20 mb-4" src="/assets/img/{{vision.icon}}" />
+            <img class="inline-block h-20 mb-4" src="/assets/img/{{vision.icon}}" alt="Icon: {{ vision.title }}" />
             <h3 class="pb-4">{{ vision.title }}</h3>
             <p class="pb-2 text-xl">{{ vision.description }}</p>
             {% if vision.tags %}
@@ -182,7 +185,7 @@ title: "Projektbüro Schafe vorm Fenter UG"
     </div>
     <div class="container grid w-full grid-cols-3 gap-8 lg:grid-cols-4 xl:w-2/3 ">
         <div><img class="inline-block rounded-md rounded-br-3xl grayscale" src="/assets/img/jan.jpg"
-                alt="Jan-Henrik Hempel" /></div>
+                alt="Foto: Jan-Henrik Hempel" /></div>
         <div class="col-span-2 pb-16 text-left lg:col-span-3">
             <p class="pb-4 font-extrabold">Jan-Henrik Hempel</p>
             <p class="pb-8">Jan ist Architekt und Motivator für Visionen, Macher und Perfektionist - und im Kopf immer

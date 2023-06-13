@@ -11,13 +11,10 @@ defaults:
       path: "assets/img"
     values:
       image: true
-plugins:
-  - jekyll-postcss
-postcss:
-  cache: false
-include: ["node_modules/tailwindcss"]
 exclude:
   - package.json
   - yarn.lock
   - tailwind.config.js
   - postcss.config.js
+  - tailwindcss*
+  - README.md

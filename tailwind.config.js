@@ -2,7 +2,6 @@
 module.exports = {
   content: [
     './_layouts/**/*.html',
-    './*.md',
     './*.html',
   ],
   theme: {

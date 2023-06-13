@@ -1,17 +1,21 @@
 ## Development
 
-`jekyll serve --livereload`
+```
+./tailwindcss -i _sass/tailwind.css -o assets/css/styles.css
+jekyll serve --livereload
+```
 
-## Tailwind CSS
+## Install Tailwind CLI
+
+Mac (Intel):
 
 ```
 curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-macos-arm64
-chmod +x tailwindcss-macos-arm64
-mv tailwindcss-macos-arm64 tailwindcss
+chmod +x tailwindcss-macos-x64
+mv tailwindcss-macos-x64 tailwindcss
 ```
 
-
-Linux
+Linux:
 
 ```
 curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64
